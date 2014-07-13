@@ -68,7 +68,7 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DNO_TUNNEL_RECORDING
 USE_OPENGL_RENDERER := true
 TARGET_DOESNT_USE_FENCE_SYNC := true
 BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
-BOARD_EGL_CFG := device/samsung/delos3geur/prebuilt/system/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/samsung/delos3geur/prebuilt/egl.cfg
 
 ## Qualcomm BSP
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
