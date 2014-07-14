@@ -94,6 +94,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/samsung/delos3geur/ramdisk,root)
+##Vendor
+$(call inherit-product, device/samsung/wilcoxltexx/delos3geur-vendor-blobs.mk)
 
 ## Other
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
