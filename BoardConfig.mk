@@ -18,8 +18,8 @@
 ## Kernel, bootloader etc.
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
-TARGET_KERNEL_SOURCE := device/samsung/delos3geur-kernel
-TARGET_KERNEL_CONFIG := cyanogen_delos3geur_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/msm8625
+TARGET_KERNEL_CONFIG := cyanogenmod_delos3geur_defconfig
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom loglevel=1 vmalloc=200M
 BOARD_KERNEL_BASE := 0x00200000
