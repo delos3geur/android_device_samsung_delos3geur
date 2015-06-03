@@ -12,90 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/delos3geur/overlay
 
-## rild
-PRODUCT_PACKAGES := \
-    rild \
-    BasicSmsReceiver
+$(call inherit-product, device/samsung/delos3geur/device_delos3geur.mk)
+$(call inherit-product, vendor/samsung/delos3geur/delos3geur-vendor-blobs.mk)
 
-## Video
-PRODUCT_PACKAGES += \
-    libstagefrighthw \
-    libmm-omxcore \
-    libOmxCore
-
-## Graphics
-PRODUCT_PACKAGES += \
-    copybit.msm7x27a \
-    gralloc.msm7x27a \
-    hwcomposer.msm7x27a \
-    libtilerenderer
-
-## Misc.
-PRODUCT_PACKAGES += \
-    make_ext4fs \
-    setup_fs \
-    com.android.future.usb.accessory
-
-## Audio
-PRODUCT_PACKAGES += \
-    audio.primary.msm7x27a \
-    audio_policy.msm7x27a \
-    audio.a2dp.default \
-    audio.usb.default \
-    audio_policy.conf \
-    libaudioutils
-
-## Other HALs
-PRODUCT_PACKAGES += \
-    camera.msm7x27a \
-    lights.msm7x27a \
-    gps.msm7x27a \
-    power.msm7x27a
-
-## FM radio
-PRODUCT_PACKAGES += \
-    qcom.fmradio \
-    libqcomfm_jni \
-    FM2
-
-## Device-specific packages
-PRODUCT_PACKAGES += \
-    SamsungServiceMode \
-
-## Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
-    frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-    frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
-    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
-    frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
-    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
-
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.secure=0 \
-    ro.adb.secure=0 \
-    persist.sys.usb.config=mtp
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.zygote.disable_gl_preload=true \
-
-# Baseband properly shown in about info instead of Unknown
-    PRODUCT_PROPERTY_OVERRIDES += \
-    gsm.version.baseband=I8552DXAMJ1
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/samsung/delos3geur/ramdisk,root)
-##Vendor
-$(call inherit-product, device/samsung/delos3geur/delos3geur-vendor-blobs.mk)
+
+
 
 ## Other
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
