@@ -104,8 +104,8 @@ WIFI_DRIVER_MODULE_ARG := "suspend_mode=3 wow_mode=2 ath6kl_p2p=1 recovery_enabl
 
 ## RIL
 BOARD_USES_LEGACY_RIL := true
-BOARD_PROVIDES_LIBRIL := true
-LOCAL_CFLAGS += -DRIL_NO_CELL_INFO_LIST
+#BOARD_PROVIDES_LIBRIL := true
+#LOCAL_CFLAGS += -DRIL_NO_CELL_INFO_LIST
 BOARD_RIL_CLASS := ../../../device/samsung/delos3geur/ril/
 
 ## Vold
