@@ -1,18 +1,18 @@
 /*
-* Copyright (C) 2012 The Android Open Source Project
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-* http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
+ * Copyright (C) 2012 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 #define LOG_TAG "qcom_audio_policy_hal"
 //#define LOG_NDEBUG 0
@@ -118,7 +118,7 @@ static audio_policy_forced_cfg_t ap_get_force_use(
 }
 
 /* if can_mute is true, then audio streams that are marked ENFORCED_AUDIBLE
-* can still be muted. */
+ * can still be muted. */
 static void ap_set_can_mute_enforced_audible(struct audio_policy *pol,
                                              bool can_mute)
 {
