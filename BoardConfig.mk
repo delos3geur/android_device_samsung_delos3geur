@@ -76,6 +76,7 @@ BOARD_EGL_CFG := device/samsung/delos3geur/prebuilt/egl.cfg
 
 ## Qualcomm BSP
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
+TARGET_USES_QCOM_BSP := true
 
 ## GPS
 BOARD_USES_QCOM_LIBRPC := true
