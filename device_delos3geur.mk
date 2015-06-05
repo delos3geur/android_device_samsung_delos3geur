@@ -25,12 +25,15 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libOmxCore
 
-## Graphics
+# Display and Graphics
 PRODUCT_PACKAGES += \
-    copybit.msm7x27a \
-    gralloc.msm7x27a \
+    libgenlock \
+    libmemalloc \
+    liboverlay \
+    libqdutils \
+    gralloc.msm7x27 \
     hwcomposer.msm7x27a \
-    libtilerenderer
+    copybit.msm7x27
 
 ## Misc.
 PRODUCT_PACKAGES += \
