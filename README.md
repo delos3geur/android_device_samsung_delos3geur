@@ -1,1 +1,1 @@
-cm11 device tree for gt-18552
+Omni 5.1 Source for delos3geur

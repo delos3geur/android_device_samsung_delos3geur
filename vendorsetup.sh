@@ -21,5 +21,5 @@
 # function: add_lunch_combo generic-eng
 
 for i in eng userdebug; do
-    add_lunch_combo cm_delos3geur-${i}
+    add_lunch_combo omni_delos3geur-${i}
 done
