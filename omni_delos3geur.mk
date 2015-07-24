@@ -7,7 +7,7 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 PRODUCT_RELEASE_NAME := GalaxyGrandQuattro
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/omni/config/common_full_phone.mk)
+#$(call inherit-product, vendor/omni/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/delos3geur/delos3geur.mk)
