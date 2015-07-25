@@ -137,6 +137,9 @@ TARGET_RECOVERY_FSTAB := device/samsung/delos3geur/ramdisk/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 RECOVERY_FSTAB_VERSION := 2
 
+##TWRP
+TW_THEME := portrait_hdpi
+
 ## Filesystem
 BOARD_DATA_DEVICE := /dev/block/mmcblk0p24
 BOARD_DATA_FILESYSTEM := ext4

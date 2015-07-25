@@ -31,7 +31,7 @@ struct ashmem_pin {
 	__u32 offset;	/* offset into region, in bytes, page-aligned */
 	__u32 len;	/* length forward from offset, in bytes, page-aligned */
 };
-
+struct file;
 #define __ASHMEMIOC		0x77
 
 #define ASHMEM_SET_NAME		_IOW(__ASHMEMIOC, 1, char[ASHMEM_NAME_LEN])
